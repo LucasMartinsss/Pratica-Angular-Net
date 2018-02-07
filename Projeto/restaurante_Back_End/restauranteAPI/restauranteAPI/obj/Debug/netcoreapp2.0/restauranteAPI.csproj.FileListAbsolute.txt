@@ -1,0 +1,11 @@
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\bin\Debug\netcoreapp2.0\restauranteAPI.deps.json
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\bin\Debug\netcoreapp2.0\restauranteAPI.runtimeconfig.json
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\bin\Debug\netcoreapp2.0\restauranteAPI.runtimeconfig.dev.json
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\bin\Debug\netcoreapp2.0\restauranteAPI.dll
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\bin\Debug\netcoreapp2.0\restauranteAPI.pdb
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\obj\Debug\netcoreapp2.0\restauranteAPI.csproj.CoreCompileInputs.cache
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\obj\Debug\netcoreapp2.0\restauranteAPI.AssemblyInfoInputs.cache
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\obj\Debug\netcoreapp2.0\restauranteAPI.AssemblyInfo.cs
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\obj\Debug\netcoreapp2.0\restauranteAPI.dll
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\obj\Debug\netcoreapp2.0\restauranteAPI.pdb
+C:\Users\user.user-PC\Desktop\Cedro\Projeto\restaurante_Back_End\restauranteAPI\restauranteAPI\obj\Debug\netcoreapp2.0\restauranteAPI.csprojResolveAssemblyReference.cache

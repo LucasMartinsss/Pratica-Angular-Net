@@ -1,0 +1,50 @@
+<div class="container">
+  <h2>
+      Restaurantes
+  </h2>
+  <br/><br/><br/>
+  <div class="panel panel-primary">
+    <div class="panel-heading">FILTRO</div>
+    <div class="panel-body">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+        <div class="form-group col-sm-12">
+            <div class="col-sm-6">
+              <label for="">Nome do Restaurante </label>
+              
+              <input type="text" class="form-control" id="nomeRestaurante" 
+              name="nomeRestaurante" [(ngModel)]="restaurante.nomeRestaurante" required>
+            </div>
+          </div>
+          <div class="form-group col-sm-12">
+            <div class="col-sm-6">
+            <button type="submit"  class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Consultar</button>
+            <a routerLink="/cadastroRestaurante"><button type="submit" class="btn btn-success col-sm-offset-1"><span class="glyphicon glyphicon-plus"></span> Cadastrar Novo Restaurante</button></a>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+      <div class="panel-body">
+        
+        <table class="table table-striped table-hover"  >
+        <thead>
+          <th style="width: 15%;">AÇÕES</th>
+          <th>CÓDIGO</th>
+          <th>NOME</th>
+        </thead>
+         <tbody>
+          <tr *ngFor="let item of restaurantes" >
+              <td>
+                  <a routerLink="/restaurante" (click)="onSubmitDelete(item.id)"><span class="glyphicon glyphicon-remove" style="font-size: 15px; color: red;"></span></a>
+                  <a routerLink="/cadastroRestaurante" [queryParams]="{id:item.id}" 
+                  queryParamsHandling="merge" (click)="onSubmitEdit(item.id)"><span class="glyphicon glyphicon-edit" style="font-size: 15px; color: blue; padding-left: 10px;"></span></a>
+              </td>
+              <td>{{item.id}}</td>
+              <td>{{item.nomeRestaurante}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>

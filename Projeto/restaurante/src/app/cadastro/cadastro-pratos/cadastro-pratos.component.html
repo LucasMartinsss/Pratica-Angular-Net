@@ -1,0 +1,42 @@
+<div class="container">
+    <h2>
+        Cadastro de Pratos
+    </h2>
+    <br/><br/>
+    <div class="panel panel-primary">
+      <div class="panel-heading">DADOS</div>
+      <div class="panel-body">
+        <form #f="ngForm" (ngSubmit)="onSubmitCadastro(f)" >
+                <div class="form-group col-sm-12">
+                        <div class="col-sm-6">
+                            <label for="restaurante">Restaurante </label>
+                            <select class="form-control"  id="restaurante" [(ngModel)]="prato.restauranteID" name="restaurante" required>
+                               <option class="form-control"  [value]="0">Selecione</option>
+                               <option class="form-control" *ngFor="let item of restaurantes"  [value]="item.id">{{item.nomeRestaurante}}</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-6">
+                        <label for="">Nome do Prato </label>
+                        <input type="text" class="form-control" id="nomePrato" 
+                        name="nomePrato" [(ngModel)]="prato.nomePrato" required>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                        <div class="col-sm-6">
+                            <label for="">Preço do Prato </label>
+                            <input type="text" class="form-control" id="precoPrato" 
+                            name="precoPrato" [(ngModel)]="prato.precoPrato" required>
+                        </div>
+                 </div>
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-6">
+                        <button type="submit"  class="btn btn-primary">Salvar</button>
+                    <a routerLink="/pratos" > <button type="button"  class="btn btn-danger col-sm-offset-1"><span class="glyphicon glyphicon-repeat"></span> Cancelar</button></a>
+                    </div>
+                </div>
+            </form>
+      </div>
+    </div>
+</div>

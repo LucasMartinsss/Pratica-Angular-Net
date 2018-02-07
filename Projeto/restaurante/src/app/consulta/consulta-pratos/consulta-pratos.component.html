@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>
+      Pratos
+  </h2>
+  <br/><br/>
+  
+      <div class="panel-body">
+          
+          <div class="form-group ">
+               
+            <a routerLink="/cadastroPratos"><button type="submit" class="btn btn-success"> <span class="glyphicon glyphicon-plus"></span> Cadastrar novo Prato </button></a>
+            
+          </div>
+      </div>
+  
+      <div class="panel panel-primary">
+            <div class="panel-body">
+              
+              <table class="table table-striped table-hover"  >
+              <thead>
+                <th style="width: 15%;">AÇÕES</th>
+                <th>CÓDIGO</th>
+                <th>NOME</th>
+                <th>PREÇO</th>
+                <th>ID RESTAURANTE</th>
+              </thead>
+               <tbody>
+                <tr *ngFor="let item of pratos" >
+                    <td>
+                        <a routerLink="/pratos" (click)="onSubmitDelete(item.id)"><span class="glyphicon glyphicon-remove" style="font-size: 15px; color: red;"></span></a>
+                        <a routerLink="/cadastroPratos" [queryParams]="{id:item.id}" 
+                            queryParamsHandling="merge" (click)="onSubmitEdit(item.id)"><span class="glyphicon glyphicon-edit" style="font-size: 15px; color: blue; padding-left: 10px;"></span></a>
+                    </td>
+                    <td>{{item.id}}</td>
+                    <td>{{item.nomePrato}}</td>
+                    <td>R{{item.precoPrato | currency}}</td>
+                    <td>{{item.restauranteID}}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+</div>
